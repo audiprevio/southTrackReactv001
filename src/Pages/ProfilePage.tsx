@@ -1,7 +1,7 @@
 import { Typography, Button, Divider } from 'antd';
 import { useNavigate } from 'react-router-dom';
 
-const { Title, Paragraph } = Typography;
+const { Paragraph } = Typography;
 
 const ProfilePage = () => {
   const navigate = useNavigate();
