@@ -1,12 +1,11 @@
 # SouthTrack React Application
 <img width="1438" alt="Screenshot 2023-10-03 at 18 04 43" src="https://github.com/audiprevio/southTrackReactv001/assets/126348614/7886e849-4752-4bfd-9583-122c7efb7b56">
 
-Welcome to SouthTrack v.0.0.1a (Alpha) documentation. SouthTrack is a React and LeafletJS-based GUI for Latitude Longitude Penguin Tracker API.
+### Welcome to SouthTrack v.0.0.1a (Alpha) documentation. SouthTrack is a React and LeafletJS-based GUI for Latitude Longitude Penguin Tracker API.
 
 ### Livelink: [south-track.netlify.app](https://south-track.netlify.app)
 
 ## Tech Stack
-----------
 
 SouthTrack employs a robust tech stack to provide a reliable and efficient solution:
 
