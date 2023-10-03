@@ -36,8 +36,9 @@ const AddPenguinForm = () => {
     }
 
     values.lastPosition = values.lastPosition.map(Number);
-  
+  // @ts-ignore
     values.lastUpdate = values.lastUpdate.toISOString();
+    // @ts-ignore
     values.taggedTime = values.taggedTime.toISOString();
   
     console.log(values);

@@ -53,7 +53,7 @@ const MapComponent: React.FC = () => {
           .bindPopup(`
             <h2>Name: ${penguin.penguinName}</h2>
             <p>Last Position: ${penguin.lastPosition[0]}, ${penguin.lastPosition[1]}</p>
-            <p>Last Updated: ${penguin.lastUpdate}</p>
+            <p>Last Updated: ${new Date(penguin.lastUpdate).toLocaleString()}</p>
             <p>Age at Tagging: ${penguin.ageAtTagging}</p>
             <p>Tagged by: ${penguin.taggedBy}</p>
           `)

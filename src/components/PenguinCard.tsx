@@ -37,11 +37,11 @@ const PenguinCard: React.FC<PenguinCardProps> = ({ penguin, onDelete, onUpdate }
   return (
     <Card title={penguin.penguinName} style={{ marginBottom: '1rem', marginTop: '1rem', minWidth: '18rem', width: '20rem', maxWidth: '48rem'}}>
       <Typography.Text>Last Position: {penguin.lastPosition.join(', ')}</Typography.Text><br/>
-      <Typography.Text>Last Update: {penguin.lastUpdate}</Typography.Text><br/>
+      <Typography.Text>Last Update: {new Date(penguin.lastUpdate).toLocaleString()}</Typography.Text><br/>
       <Typography.Text>Species Name: {penguin.speciesName}</Typography.Text><br/>
       <Typography.Text>Age at Tagging: {penguin.ageAtTagging}</Typography.Text><br/>
       <Typography.Text>Tagged Position: {penguin.taggedPosition}</Typography.Text><br/>
-      <Typography.Text>Tagged Time: {penguin.taggedTime}</Typography.Text><br/>
+      <Typography.Text>tagged time: {new Date(penguin.taggedTime).toLocaleString()}</Typography.Text><br/>
       <Typography.Text>Tagged By: {penguin.taggedBy}</Typography.Text>
       <br />
       <br />
