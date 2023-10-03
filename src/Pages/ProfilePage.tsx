@@ -20,7 +20,7 @@ const ProfilePage = () => {
         Welcome, <b>{username}!</b>
       </Paragraph>
       <Paragraph>
-        Thank you for trying out SouthTrack React Application. This react application is under continuous development. As I dive even deeper into the world of frontend engineering 😁
+        Thank you for trying out SouthTrack React Application. This react application is under continuous development. As I dive even deeper into the world of frontend engineering, I will develop this app or some other mutations of this leaflet-based app 😁
       </Paragraph>
       <Paragraph>
         For more information on the technicalities of this application, you can visit <a href="https://github.com/audiprevio/southTrackReactv001">SouthTrack's GitHub Repo.</a>
