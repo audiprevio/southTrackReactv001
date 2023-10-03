@@ -1,0 +1,306 @@
+:root {
+  line-height: 1.5;
+  font-family: 'Poligon', sans-serif !important;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+h4 {
+    margin-bottom: 0;
+    color: #015498;
+}
+
+p {
+    margin-top: 0;
+}
+body {
+    font-family: 'Helvetica Neue';
+}
+
+b {
+    color: #015498
+}
+
+h1 {
+    margin: 0;
+}
+
+.ping-animation {
+    animation: ping 1s infinite;
+}
+
+@keyframes ping {
+0% {
+    transform: scale(1);
+    opacity: 1;
+}
+100% {
+    transform: scale(2);
+    opacity: 0;
+}
+}
+
+a {
+    text-decoration: none;
+    color: #015498;
+    font-weight: medium;
+}
+
+a:hover {
+    color: #107;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+
+
+#map { 
+    height: 100vh; 
+    padding: 0;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background: white;
+    color: #333;
+    box-shadow: 0 0px 0px #fafafa;
+    padding: 1px;
+    text-align: left;
+    border-color: aqua;
+    border: 2px;
+    border-radius: 4px;
+}
+.leaflet-popup-close-button {
+    display: none;
+}
+#info-card {
+    position: absolute;
+    bottom: 2.5%;
+    right: 1vw;
+    width: 15rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 10px;
+    z-index: 650;
+}
+
+.warningbtn {
+  background-color: transparent !important;
+  color: #c53f3f !important;
+  border-color: #c53f3f !important;
+}
+
+#penguin-list {
+    max-height: 22rem;
+    overflow-y: auto;
+}
+
+
+
+hr.vertical-divider {
+    min-height: 100%;
+    max-height: 100vh;
+    margin-top: -1;
+    margin-bottom: -1;
+    width: 1px;
+    margin-left: 0.75rem;
+    border: none;
+    background-color: #e5e5e5;
+    margin-right: 0.75rem;
+}
+
+#map {
+    flex: 1;
+}
+.penguin-popup .leaflet-popup-content-wrapper, .penguin-popup .leaflet-popup-tip {
+    background: white;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    padding: 1px;
+    text-align: left;
+    border-color: aqua;
+    border: 2px;
+    border-radius: 4px;
+    padding: 1rem;
+    width: 15rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+#nav-card {
+    position: absolute;
+    bottom: 2.5%;
+    left: 1vw;
+    width: 32rem;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    padding: 0.5rem 1rem;
+    z-index: 650;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+#nav-card p {
+    font-size: 0.75rem;
+    margin: 0;
+    color: #015498;
+}
+
+
+#nav-card {
+    flex: 0 0 200px;
+    margin: 10px;
+}
+.custom-leaflet-control-layers-toggle {
+    background-image: url(images/layers.png);
+    width: 36px;
+    height: 36px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+#penguins-card {
+    position: absolute;
+    top: 2.5%;
+    right: 1vw;
+    width: 15rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 10px;
+    z-index: 650;
+}
+
+#penguins-card p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+hr.divider {
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.blinking-circle {
+    animation: blink 2.5s infinite;
+}
+
+.logo {
+    width: 8rem;
+}
+
+Field {
+  margin-bottom: 1rem !important;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+#map {
+  height: 100vh;
+  box-shadow: 'inset 0 2px 5px rgba(0, 0, 0, 0.15)';
+  border-radius: '4rem'; 
+  box-sizing: 'border-box'; 
+  border: '100px solid black' /* or any other value */
+}
+
+.leaflet-control-attribution leaflet-control {
+  display: none !important;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+label {
+  color: #333;
+}
+
+@font-face {
+  font-family: 'Poligon';
+  src: url('./src/fonts/Poligon-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
