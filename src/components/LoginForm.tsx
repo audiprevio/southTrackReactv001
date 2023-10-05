@@ -3,6 +3,7 @@ import { Formik, Field, Form, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
 import { Card, message, Form as AntForm, Input, Button, Divider } from 'antd';
 import { useNavigate } from 'react-router-dom';
+import southT from '../assets/southTrack.svg';
 
 interface FormValues {
   username: string;
@@ -28,9 +29,10 @@ const LoginForm: React.FC = () => {
   };
 
   return (
-    <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
-      <Card style={{ width: '25rem' }}>
-        <h2 style={{ marginBottom: '1rem', textAlign: 'center' }}>SouthTrack Login</h2>
+    <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>      <Card style={{ width: '25rem', alignContent: 'center'}}>
+        <img alt="South Track" src={southT} style={{ width: '100%', height: '3rem'}}/>
+        <Divider style={{ margin: '0.625rem 0'}} />
+        <h2 style={{ marginBottom: '1rem', textAlign: 'center' }}>Developer Login</h2>
         <p style={{ marginBottom: '1rem', textAlign: 'center' }}>SouthTrack v.0.0.1 (Alpha) is a React & LeafletJS-based GUI for Latitude Longitude Penguin Tracker API</p>
         <Divider />
         <Formik
@@ -79,7 +81,7 @@ const LoginForm: React.FC = () => {
               </AntForm.Item>
               {status && <div>{status}</div>}
               <AntForm.Item>
-                <Button type="primary" htmlType="submit" style={{ width: '100%' }}>Submit</Button>
+                <Button className="primarybtn" type="primary" htmlType="submit" style={{ width: '100%' }}>Submit</Button>
                 <Button type="dashed" onClick={handleRegisterClick} style={{ width: '100%', marginTop: '1rem' }}>Register</Button>
               </AntForm.Item>
             </Form>

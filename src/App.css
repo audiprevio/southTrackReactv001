@@ -4,7 +4,13 @@
   padding: 2rem;
   text-align: center;
 }
+.leaflet-control-attribution.leaflet-control {
+  display: none;
+}
 
+.leaflet-control-attribution a {
+  display: none;
+}
 .logo {
   height: 6em;
   padding: 1.5em;

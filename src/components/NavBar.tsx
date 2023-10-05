@@ -1,5 +1,4 @@
-import type { MenuProps } from 'antd';
-import { Menu } from 'antd';
+import { Menu, MenuProps } from 'antd';
 import { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
@@ -36,7 +35,7 @@ const NavBar: React.FC = () => {
 
   return (
     <Menu 
-      className="nav-menu" 
+      className="nav-menu navBar" // apply the navBar class
       onClick={onClick} 
       selectedKeys={[current]} 
       mode="horizontal" 
@@ -45,9 +44,8 @@ const NavBar: React.FC = () => {
         position: 'fixed', 
         marginBottom: '2rem',
         zIndex: '1000',
-        minWidth: '18rem', 
-        width: '25rem', 
-        maxWidth: '48rem',
+        minWidth: '18rem',
+        width: '100%', 
       }}
     />
   );

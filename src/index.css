@@ -16,7 +16,7 @@
 
 h4 {
     margin-bottom: 0;
-    color: #015498;
+    color: #0f7fd4;
 }
 
 p {
@@ -24,10 +24,6 @@ p {
 }
 body {
     font-family: 'Helvetica Neue';
-}
-
-b {
-    color: #015498
 }
 
 h1 {
@@ -51,7 +47,7 @@ h1 {
 
 a {
     text-decoration: none;
-    color: #015498;
+    color: #0f7fd4;
     font-weight: medium;
 }
 
@@ -166,7 +162,7 @@ hr.vertical-divider {
 #nav-card p {
     font-size: 0.75rem;
     margin: 0;
-    color: #015498;
+    color: #0f7fd4;
 }
 
 
@@ -303,4 +299,116 @@ label {
   src: url('./src/fonts/Poligon-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
+}
+
+/* PublicLayout.css */
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.mapComponent {
+  width: 75vw;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  width: 25vw;
+  height: 100vh;
+  overflow: scroll;
+  background-color: transparent;
+}
+
+/* Media query for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+  .mapComponent {
+      width: 100%;
+  }
+  .navbar {
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+  }
+}
+
+.ant-drawer-body {
+  padding: 0 1rem 1rem 1rem !important;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 425px) {
+  .buttonClose {
+      height: 100vh !important;
+      position: fixed !important;
+      z-index: 1000 !important;
+      left: 0px !important;
+      border-radius: 0px !important;
+      border: 0px !important;
+      width: 4vw !important;
+  }
+  .Drawer {
+    width: 96vw !important;
+    right: 0 !important;
+    position: fixed !important;
+  } 
+  .penguinCard {
+    margin-left: 1rem !important;
+  }
+  .Spacer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px !important;
+  }
+  .updatebtn {
+    max-width: 15.8rem !important;
+    width: 15.8rem !important;
+  }
+  .warningbtn {
+    max-width: 15.8rem !important;
+    width: 15.8rem !important;
+  }
+}
+
+.Spacer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px !important;
+}
+.updatebtn {
+  max-width: 15.8rem !important;
+  width: 15.8rem !important;
+}
+.warningbtn {
+  max-width: 15.8rem !important;
+  width: 15.8rem !important;
+}
+
+.leaflet-control-attribution.leaflet-control {
+  position: inherit;
+  bottom: 0;
+  left: 0;
+}
+
+.ant-menu-title-content {
+  font-weight: 600;
+}
+
+.updatebtn {
+  background-color: #0f7fd4;
+}
+
+.ant-menu-title-content:focus {
+  background-color: #0f7fd4;
+}
+
+.primarybtn {
+  background-color: #0f7fd4 !important;
+}
+
+a {
+  color: #0f7fd4 !important;
 }

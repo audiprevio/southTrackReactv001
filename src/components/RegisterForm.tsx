@@ -51,8 +51,7 @@ const RegisterForm: React.FC = () => {
     <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
       <Card style={{ width: '25rem' }}>
         <h2 style={{ marginBottom: '1rem', textAlign: 'center' }}>SouthTrack Developer Registration</h2>
-        <Divider />
-        <p style={{ marginBottom: '1rem', textAlign: 'center' }}>You can Log In directly after registration with your credentials. No confirmation needed.</p>
+        <p style={{ marginBottom: '1rem', textAlign: 'center' }}>You can log in directly after registration with your credentials. Password data is secured with hash.</p>
         <Divider />
         <Formik
           initialValues={{
@@ -99,7 +98,7 @@ const RegisterForm: React.FC = () => {
               </AntForm.Item>
               {status && <div>{status}</div>}
               <AntForm.Item>
-                <Button type="primary" htmlType="submit" style={{ width: '100%' }}>Register</Button>
+                <Button className="primarybtn" type="primary" htmlType="submit" style={{ width: '100%' }}>Register</Button>
                 <Button type="dashed" onClick={handleLoginClick} style={{ width: '100%', marginTop: '1rem' }}>Back to Login</Button>
               </AntForm.Item>
             </Form>

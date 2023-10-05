@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, Button, Input, message, Divider } from 'antd';
+import { Modal, Button, Input, message, Divider, Space } from 'antd';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
@@ -72,22 +72,26 @@ const UpdatePenguinModal: React.FC<UpdatePenguinModalProps> = ({
       width={'20rem'}
       visible={visible}
       onCancel={onCancel}
-      footer={[
-        <Button key="cancel" onClick={onCancel}>
-          Cancel
-        </Button>,
-        <Button
-          key="update"
-          type="primary"
-          onClick={(e) => {
-            e.preventDefault();
-            formik.handleSubmit(e as any);
-          }}
-          disabled={formik.isSubmitting}
-        >
-          Update Now
-        </Button>
-      ]}
+      footer={
+        <Space size={16} style={{ gap: '0.5rem', width: '100%', display: 'inline-flex', flexDirection: 'column-reverse'}}>
+          <Button key="cancel" onClick={onCancel} style={{ width: '17rem' }}>
+            Cancel
+          </Button>
+          <Button
+            key="update"
+            type="primary"
+            onClick={(e) => {
+              e.preventDefault();
+              formik.handleSubmit(e as any);
+            }}
+            className='primarybtn'
+            style={{ width: '17rem' }}
+            disabled={formik.isSubmitting}
+          >
+            Update Now
+          </Button>
+        </Space>
+      }
     >
       <form onSubmit={formik.handleSubmit}>
         <div>

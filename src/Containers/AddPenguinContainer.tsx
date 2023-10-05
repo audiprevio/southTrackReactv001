@@ -77,7 +77,7 @@ const AddPenguinForm = () => {
   return (
     <div style ={{ paddingLeft: '2rem', paddingRight: '2rem', marginTop: '4rem'}}>
         <Typography><h3>Add a Penguin</h3></Typography>
-        <Typography><p>Here you can add a penguin that has been tagged with our tagging device. Please contact today's PIC for the Tracking Validation Key (TVK).</p></Typography>
+        <Typography><p>Here you can add a penguin that has been tagged with our tagging device. You can contact me at GitHub to get the TVK.</p></Typography>
         <Divider />
         <Typography style={{ color: '#333'}}><p>Note: you cannot add another penguin with the same name, even if their have been deactivated.</p></Typography>
         <Divider />
@@ -155,14 +155,14 @@ const AddPenguinForm = () => {
                 <Input type="text" />
             </Form.Item>
             <Form.Item 
-              label="Tracking Validation Key" 
+              label="Tracking Validation Key (TVK)" 
               name="secretKey"
               rules={[{ required: true, message: 'Please input the tracking validation key!' }]}
             >
                 <Input type="password" />
             </Form.Item>
             <Form.Item>
-                <Button type="primary" htmlType="submit" style={{ width: '100%' }}>Add Penguin</Button>
+                <Button className="primarybtn" type="primary" htmlType="submit" style={{ width: '100%' }}>Add Penguin</Button>
             </Form.Item>
         </Form>
   </div>

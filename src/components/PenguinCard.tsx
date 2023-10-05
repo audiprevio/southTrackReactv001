@@ -35,7 +35,7 @@ const PenguinCard: React.FC<PenguinCardProps> = ({ penguin, onDelete, onUpdate }
   };
 
   return (
-    <Card title={penguin.penguinName} style={{ marginBottom: '1rem', marginTop: '1rem', minWidth: '18rem', width: '20rem', maxWidth: '48rem'}}>
+    <Card hoverable className="penguinCard" title={penguin.penguinName} style={{ marginBottom: '1rem', marginTop: '1rem', minWidth: '18rem', width: '20rem', maxWidth: '48rem'}}>
       <Typography.Text>Last Position: {penguin.lastPosition.join(', ')}</Typography.Text><br/>
       <Typography.Text>Last Update: {new Date(penguin.lastUpdate).toLocaleString()}</Typography.Text><br/>
       <Typography.Text>Species Name: {penguin.speciesName}</Typography.Text><br/>
@@ -45,7 +45,7 @@ const PenguinCard: React.FC<PenguinCardProps> = ({ penguin, onDelete, onUpdate }
       <Typography.Text>Tagged By: {penguin.taggedBy}</Typography.Text>
       <br />
       <br />
-      <Space size={16}>
+      <Space className="Spacer" size={16}>
         <Button 
           className="updatebtn" 
           type="primary" 
