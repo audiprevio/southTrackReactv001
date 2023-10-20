@@ -2,6 +2,7 @@ import React from 'react';
 import { Modal, Button, Input, message, Divider, Space } from 'antd';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { baseURL } from '../config';
 
 interface UpdatePenguinModalProps {
   visible: boolean;
@@ -24,7 +25,7 @@ const UpdatePenguinModal: React.FC<UpdatePenguinModalProps> = ({
         lastPosition: newPosition.map(Number), 
       };
   
-      const response = await fetch(`https://penguintrackerapi.fly.dev/admin/penguins/edit/${id}`, {
+      const response = await fetch(`${baseURL}/admin/penguins/edit/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

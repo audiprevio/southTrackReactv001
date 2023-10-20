@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Divider, Form, Input, Button, DatePicker, message, Typography } from 'antd';
-import { secretKey } from '../config';
+import { secretKey, baseURL } from '../config';
 
 interface Penguin {
   penguinName: string;
@@ -43,7 +43,7 @@ const AddPenguinForm = () => {
   
     console.log(values);
   
-    fetch('https://penguintrackerapi.fly.dev/admin/penguins/addpenguin', {
+    fetch(`${baseURL}/admin/penguins/addpenguin`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

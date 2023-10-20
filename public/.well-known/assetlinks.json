@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.southtrack.twa",
+        "sha256_cert_fingerprints": ["4F:31:75:3F:6F:F9:09:62:18:FD:B8:7D:2E:4E:70:85:1A:4F:B6:14:0F:64:F8:75:F6:55:43:89:6C:F3:E1:C7"]
+      }
+    }]

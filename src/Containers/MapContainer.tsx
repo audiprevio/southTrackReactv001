@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import { baseURL } from '../config';
 
 interface Penguin {
   penguinName: string;
@@ -34,7 +35,7 @@ const MapComponent: React.FC = () => {
   }, [map]);
 
   useEffect(() => {
-    fetch('https://penguintrackerapi.fly.dev/admin/penguins')
+    fetch(`${baseURL}/admin/penguins`)
       .then(response => response.json())
       .then(data => setPenguins(data));
   }, []);
@@ -42,7 +43,7 @@ const MapComponent: React.FC = () => {
   useEffect(() => {
     if (map) {
       const penguinIcon = L.icon({
-        iconUrl: 'src/assets/pengsvg.svg',
+        iconUrl: 'https://svgshare.com/i/xpB.svg',
         iconSize: [48, 48],
         iconAnchor: [24, 48],
         popupAnchor: [0, -30]

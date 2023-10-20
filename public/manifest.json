@@ -1,0 +1,63 @@
+{
+  "display_override": ["window-controls-overlay"], 
+  "protocol_handlers": [{"protocol":"mailto","url":"/newEmail?to=%s"}], 
+    "background_color": "#ffffff",
+    "description": "SouthTrack is a React and LeafletJS-based GUI for Latitude Longitude Penguin Tracker API.",
+    "dir": "ltr",
+    "display": "standalone",
+    "name": "SouthTrack",
+    "orientation": "any",
+    "scope": "/",
+    "short_name": "SouthTrack",
+    "start_url": "/",
+    "theme_color": "#f1f4ff",
+    "categories": [
+      "utilities", 
+      "productivity"
+    ],
+    "screenshots":[
+    {
+      "src": "https://www.pwabuilder.com/assets/screenshots/screen1.png",
+      "sizes": "2880x1800",
+      "type": "image/png",
+      "description": "PWABuilder Home Screen"
+    },
+    {
+      "src": "https://www.pwabuilder.com/assets/screenshots/screen2.png",
+      "sizes": "2880x1800",
+      "type": "image/png",
+      "description": "PWABuilder Report Card"
+    },
+    {
+      "src": "https://www.pwabuilder.com/assets/screenshots/screen3.png",
+      "sizes": "2880x1800",
+      "type": "image/png",
+      "description": "Manifest information on the Report Card"
+    }
+  ],
+    "icons": [
+      {
+        "src": "/assets/favicon-4442f9a7.svg",
+        "sizes": "192x192",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "/favicon.svg",
+        "sizes": "192x192",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "/appicon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "southtrack",
+        "url": "https://week-17-audi.web.app/",
+        "description": "southtrack"
+      }
+    ],
+    "id": "strackreactv001"
+  }

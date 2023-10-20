@@ -3,6 +3,7 @@ import { Formik, Field, Form, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
 import { Card, message, Form as AntForm, Input, Button, Divider } from 'antd';
 import { useNavigate } from 'react-router-dom';
+import { baseURL } from '../config';
 
 interface FormValues {
   username: string;
@@ -63,7 +64,7 @@ const RegisterForm: React.FC = () => {
           validationSchema={RegisterSchema}
           onSubmit={async (values: FormValues, { setStatus }: FormikHelpers<FormValues>) => {
             try {
-              const response = await fetch('https://penguintrackerapi.fly.dev/admin/createadmin', {
+              const response = await fetch(`${baseURL}/admin/createadmin`, {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',

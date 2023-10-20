@@ -4,6 +4,7 @@ import * as Yup from 'yup';
 import { Card, message, Form as AntForm, Input, Button, Divider } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import southT from '../assets/southTrack.svg';
+import { baseURL } from '../config';
 
 interface FormValues {
   username: string;
@@ -43,7 +44,7 @@ const LoginForm: React.FC = () => {
           validationSchema={LoginSchema}
           onSubmit={async (values: FormValues, { setStatus, setErrors }: FormikHelpers<FormValues>) => {
             try {
-              const response = await fetch('https://penguintrackerapi.fly.dev/admin/login', {
+              const response = await fetch(`${baseURL}/admin/login`, {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
